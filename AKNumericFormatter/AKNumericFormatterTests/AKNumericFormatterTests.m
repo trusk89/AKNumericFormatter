@@ -3,7 +3,11 @@
 // file 'LICENSE', which is part of this source code package.
 //
 
+#if __has_feature(modules)
 @import XCTest;
+#else
+#import <XCTest/XCTest.h>
+#endif
 
 #import "AKNumericFormatter.h"
 
